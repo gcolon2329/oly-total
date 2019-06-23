@@ -1,0 +1,43 @@
+<html>
+<body>
+
+<h1> Edit Lifter : {{lifter.lifter_id}}  </h1>
+
+<a href = '{{url_for('showAllLifters')}}'> &lt;Back To Lifters</a>
+
+<form action = "#" method = 'POST'>
+
+  <p>Name:</p>
+    <input type = 'text' size = '30' name = 'name' placeholder= '{{lifter.lifter_id}}'>
+
+  <p> Gender:</p>
+    <input type = 'radio' name = 'gender' value = 'Male'>Male
+    <input type = 'radio' name = 'gender' value = 'Female'>Female
+
+  <p> Weightclass:</p>
+    <input type = 'text' size = 30 name = weightclass placeholder = '{{lifter.weightclass}}'>
+
+  <p> Clean & Jerk</p>
+    <input type = 'text' size = 30 name = clean_jerk placeholder = '{{lifter.clean_jerk}}kg'>
+
+  <p> Snatch</p>
+    <input type = 'text' size = 30 name = snatch placeholder = '{{lifter.snatch}}kg'>
+
+  <p> Total: </p>
+    <input type = 'text' size = 30 name = total placeholder = '{{lifter.total}}kg'>
+
+<br><br>
+<input type = 'submit' value = 'Edit'>
+</form>
+
+
+
+
+
+
+
+
+
+
+</body>
+<html>

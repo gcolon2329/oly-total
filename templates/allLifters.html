@@ -1,0 +1,19 @@
+<h1> All Lifters </h1>
+
+<a href = '{{url_for('addLifter')}}'> Add New Lifter</a>
+<br>
+<br>
+
+{% for lifter in all %}
+{{lifter.id}}.
+<a href = '{{url_for('showLifter',id = lifter.id)}}'>{{lifter.lifter_id}}</a>
+<em>{{lifter.gender}}</em>
+({{lifter.weightclass}})
+<br>
+<a href = '{{url_for('editLifter', id = lifter.id)}}'>Edit</a> <a href = '{{url_for('deleteLifter', id = lifter.id)}}'>Delete</a>
+
+
+<br>
+<br>
+
+{% endfor %}

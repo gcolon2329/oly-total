@@ -1,0 +1,35 @@
+<html>
+<body>
+
+
+
+
+
+{% for lifter in lifter %}
+
+<h1> Athlete: <h2>{{lifter.lifter_id}}</h2></h1>
+<br>
+{{lifter.gender}}  (-{{lifter.weightclass}})
+<br>
+<h3>Stats:</h3>
+ Snatch: {{lifter.snatch}}kg
+<br><br>
+Clean and Jerk: {{lifter.clean_jerk}}kg
+<br><br>
+Total: {{lifter.total}}kg
+
+
+{% endfor %}
+<br>
+<br>
+
+<a href = '{{url_for('showAllLifters')}}'>&lt;Back to Lifters </a>
+
+
+
+
+
+
+
+  </body>
+  </html>
